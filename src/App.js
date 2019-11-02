@@ -67,7 +67,8 @@ toggleCompleted = todoId => {
   });
 };
 
-clearCompleted = () => {
+clearCompleted = todoName => {
+ todoName.preventDefault();
   console.log("clearCompleted");
   this.setState({
     todolist: this.state.todolist.filter(todo => {
